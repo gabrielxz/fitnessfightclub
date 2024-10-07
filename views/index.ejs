@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strava Authorization</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Authorize with Strava</h1>
+    <a href="https://www.strava.com/oauth/authorize?client_id=<%= clientId %>&redirect_uri=<%= process.env.STRAVA_REDIRECT_URI %>&response_type=code&scope=read,activity:read">
+        <button>Authorize with Strava</button>
+    </a>
+</body>
+</html>
